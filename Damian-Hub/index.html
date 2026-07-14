@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Damian Hub</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.subtitle {
+    color: #aaa;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 50px;
+}
+
+.card {
+    background: #222;
+    border-radius: 25px;
+    padding: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 2px solid #333;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: #333;
+}
+
+.icon img {
+    width: 80px;
+height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+
+/* Popup */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background: #222;
+    padding: 40px;
+    border-radius: 30px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid #444;
+}
+
+.popup-box h2 {
+    margin-top: 0;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<h1>🌌 Damian Hub</h1>
+<p class="subtitle">All my creations in one place</p>
+
+
+<div class="card" onclick="window.location.href='Deep-Core-Mining/index.html'">
+    <div class="icon">⛏️</div>
+    <h2>Mine Clicker</h2>
+    <p>An idle miner clicker</p>
+</div>
+
+<div class="card" onclick="showPopup()">
+    <div class="icon">🚧</div>
+    <h2>Coming Soon</h2>
+    <p>This website isn't ready yet</p>
+</div>
+
+
+<div class="card" onclick="showPopup()">
+    <div class="icon">🚧</div>
+    <h2>Coming Soon</h2>
+    <p>This website isn't ready yet</p>
+</div>
+
+<div class="card" onclick="showPopup()">
+    <div class="icon">🚧</div>
+    <h2>Coming Soon</h2>
+    <p>This website isn't ready yet</p>
+</div>
+
+
+<!-- Coming Soon Card -->
+
+<div class="card" onclick="showPopup()">
+    <div class="icon">🚧</div>
+    <h2>Coming Soon</h2>
+    <p>This website isn't ready yet</p>
+</div>
+
+
+</div>
+
+
+<!-- Popup Window -->
+
+<div class="popup" id="popup">
+
+    <div class="popup-box">
+
+        <h2>🚧 Not Finished Yet</h2>
+
+        <p>
+        Sorry, this website isn't finished yet.
+        </p>
+
+        <button onclick="closePopup()">
+            Go Back
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+function openSite(url) {
+    window.open(url, "_blank");
+}
+
+
+function showPopup() {
+    document.getElementById("popup").style.display = "flex";
+}
+
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+</script>
+
+
+</body>
+</html>
