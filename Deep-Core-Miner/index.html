@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Deep Core Miner</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="game">
+
+
+<header>
+
+<h1>⛏️ DEEP CORE MINER</h1>
+
+<p>
+Mine deeper. Hire miners. Reach the Core.
+</p>
+
+</header>
+
+
+
+
+
+<!-- DEPTH BAR -->
+
+<div class="depth-section">
+
+<div class="depth-bar">
+
+<div id="depthProgress"></div>
+
+</div>
+
+
+<p id="depthRequirement">
+0 / 100 Mining Power
+</p>
+
+
+</div>
+
+
+
+
+
+
+<main>
+
+
+
+
+<!-- INVENTORY -->
+
+<section class="panel inventory">
+
+
+<h2>
+🎒 Inventory
+</h2>
+
+
+
+<div class="ore">
+
+<div>
+
+🪨 Stone
+
+<br>
+
+<small>
+Value: 2 Coins
+</small>
+
+</div>
+
+
+<span id="stone">
+0
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="ore">
+
+<div>
+
+⚫ Coal
+
+<br>
+
+<small>
+Value: 5 Coins
+</small>
+
+</div>
+
+
+<span id="coal">
+0
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="ore">
+
+<div>
+
+🟡 Gold
+
+<br>
+
+<small>
+Value: 15 Coins
+</small>
+
+</div>
+
+
+<span id="gold">
+0
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="ore">
+
+<div>
+
+💎 Crystal
+
+<br>
+
+<small>
+Value: 50 Coins
+</small>
+
+</div>
+
+
+<span id="crystal">
+0
+</span>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- MINING AREA -->
+
+<section class="mine-zone">
+
+
+<h2>
+🌑 Mine Shaft
+</h2>
+
+
+
+<div class="cave">
+
+🪨
+
+
+<button id="mineButton">
+
+⛏️ MINE
+
+</button>
+
+
+</div>
+
+
+
+
+
+<p id="depth">
+Depth: 0m
+</p>
+
+
+
+
+<p id="status">
+Ready to mine.
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- WORKSHOP -->
+
+<section class="panel shop">
+
+
+<h2>
+🛠 Workshop
+</h2>
+
+
+
+
+<h3>
+⛏️ Equipment
+</h3>
+
+
+
+<p>
+
+Pickaxe Level:
+
+<span id="pickaxe">
+1
+</span>
+
+</p>
+
+
+
+<button id="upgradeButton">
+
+Upgrade Pickaxe
+
+<br>
+
+Cost: 50 Coins
+
+</button>
+
+
+
+
+
+
+
+<h3>
+👷 Mining Crew
+</h3>
+
+
+
+
+<p>
+
+Miners:
+
+<span id="miners">
+0
+</span>
+
+</p>
+
+
+
+<p>
+
+Auto Mining:
+
+<span id="autoPower">
+0
+</span>
+
+/sec
+
+</p>
+
+
+
+
+
+<button id="minerButton">
+
+Hire Miner
+
+<br>
+
+Cost: 100 Coins
+
+</button>
+
+
+
+
+
+
+
+<h3>
+💰 Wallet
+</h3>
+
+
+
+<p>
+
+Coins:
+
+<span id="coins">
+0
+</span>
+
+</p>
+
+
+
+<button id="sellButton">
+
+Sell Ores
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+⛏️ Mission: Reach the Core
+
+</footer>
+
+
+
+
+</div>
+
+
+
+
+
+<script src="game.js"></script>
+
+
+</body>
+
+</html>
